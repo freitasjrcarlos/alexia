@@ -48,11 +48,47 @@ export default class Home extends Component {
           </TouchableHighlight>
 
           <TouchableHighlight style={styles.btnCountry} onPress={()=>{
-            let frase = 'Amo';
+            let frase = 'Ti Amo';
             this.state.frase = frase;
             this.setState({frase:frase});
           }}>
             <Image source={require('../assets/images/italy.png')} style={styles.country} />
+          </TouchableHighlight>
+          
+        </View>
+
+        <View style={styles.bgCountryRow}>
+
+          <TouchableHighlight style={styles.btnCountry} onPress={()=>{
+            let frase = 'Te amo';
+            this.state.frase = frase;
+            this.setState({frase:frase});
+          }}>
+           <Image source={require('../assets/images/spain.png')} style={styles.country} />
+          </TouchableHighlight>
+
+          <TouchableHighlight style={styles.btnCountry} onPress={()=>{
+            let frase = 'Seni seviyorum';
+            this.state.frase = frase;
+            this.setState({frase:frase});
+          }}>
+           <Image source={require('../assets/images/turquia.png')} style={styles.country} />
+          </TouchableHighlight>
+
+          <TouchableHighlight style={styles.btnCountry} onPress={()=>{
+            let frase = 'Ik hou van jou';
+            this.state.frase = frase;
+            this.setState({frase:frase});
+          }}>
+            <Image source={require('../assets/images/holanda.png')} style={styles.country} />
+          </TouchableHighlight>
+
+          <TouchableHighlight style={styles.btnCountry} onPress={()=>{
+            let frase = 'AJe t’aime';
+            this.state.frase = frase;
+            this.setState({frase:frase});
+          }}>
+            <Image source={require('../assets/images/france.png')} style={styles.country} />
           </TouchableHighlight>
           
         </View>
@@ -69,17 +105,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#ffcadc'
+    backgroundColor: '#198aff'
   },
   title: {
     color: '#ffffff',
     fontSize: 20,
-    marginTop: 20,
+    marginTop: 30,
   },
   bgCountry: {
     flex: 1,
     flexDirection: 'row',
     marginTop: 50,
+  },
+  bgCountryRow: {
+    flex: 1,
+    flexDirection: 'row',
+    marginTop: 0,
   },
   btnCountry: {
     width: 50,

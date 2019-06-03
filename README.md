@@ -13,7 +13,7 @@ git clone https://github.com/freitasjrcarlos/alexia.git
 npm install
 ```
 
-**Add the name of your love in state 'name'**
+**Add the name of your love in state 'Name'**
 ```
  constructor(props){
     super(props);
